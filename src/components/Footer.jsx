@@ -90,9 +90,32 @@ const Footer = () => {
         </div>
 
         {/* Bottom Credits */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[var(--bg)]/60">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[var(--bg)]/65">
           <p>© {new Date().getFullYear()} {personal.name}. All rights reserved.</p>
-          <p className="flex items-center gap-1">
+
+          <div className="flex items-center gap-1.5 flex-wrap justify-center text-center">
+            <span>Developed & designed by</span>
+            <a
+              href="https://github.com/Mayawaaan/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-[var(--bg)] hover:text-[var(--highlight)] transition-colors underline underline-offset-4 decoration-[var(--highlight)]/60"
+            >
+              Mayawaaan
+            </a>
+            <span className="opacity-40">•</span>
+            <span>Powered by</span>
+            <a
+              href="https://zsyio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-[var(--bg)] hover:text-[var(--highlight)] transition-colors underline underline-offset-4 decoration-[var(--highlight)]/60"
+            >
+              zsyio
+            </a>
+          </div>
+
+          <p className="flex items-center gap-1 text-center md:text-right text-[var(--bg)]/50">
             Accenture Strategy & Consulting (GenAI) • Ex-Infosys Senior Systems Engineer • Great Lakes PGPM
           </p>
         </div>

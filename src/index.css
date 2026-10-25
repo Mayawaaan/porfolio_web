@@ -10,7 +10,7 @@
 :root {
   --bg: #E8E8E8;          /* 1. Background / Canvas */
   --text: #001427;        /* 2. Text / Contrast Primary */
-  --highlight: #7D4F50;   /* 3. Highlight / Accent */
+  --highlight: #A4243B;   /* 3. Highlight / Accent */
 
   /* Compatibility aliases */
   --theme-bg: var(--bg);
