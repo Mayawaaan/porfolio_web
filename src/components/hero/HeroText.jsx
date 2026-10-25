@@ -56,7 +56,7 @@ export default function HeroText({
     "Engineering digital experiences at the intersection of code, motion and imagination.";
 
   return (
-    <div className="relative z-20 flex w-full flex-col items-start">
+    <div className="relative z-20 flex w-full flex-col items-start rounded-3xl backdrop-blur-sm bg-[var(--bg)]/60 p-5 sm:p-8 lg:bg-transparent lg:p-0 lg:backdrop-blur-none">
       {/* Availability + Role Eyebrow */}
       <motion.div
         {...motionProps(0.05, 14)}
@@ -84,10 +84,10 @@ export default function HeroText({
       {/* Monumental Display Name */}
       <motion.h1
         {...motionProps(0.15, 34)}
-        className="w-full font-['Barlow_Condensed',sans-serif] text-[clamp(4.2rem,9vw,10.4rem)] font-black uppercase leading-[0.78] tracking-[-0.045em] text-[var(--text)]"
+        className="w-full font-['Barlow_Condensed',sans-serif] text-[clamp(3.8rem,7.5vw,9.2rem)] font-black uppercase leading-[0.8] tracking-[-0.04em] text-[var(--text)]"
       >
         <span className="block">{firstName}</span>
-        <span className="mt-2.5 block whitespace-nowrap text-[var(--text)]">
+        <span className="mt-2 block whitespace-nowrap text-[var(--text)]">
           {lastName}
           <span className="text-[var(--highlight)]">.</span>
         </span>
